@@ -27,8 +27,12 @@ function sass (entry, name, dest) {
 function php () {
     return gulp.src('public/index.html')
         .pipe(shell([
-            'php core/builder.php --generate --patternsonly'
+            'php core/builder.php --generate'
+        ]))
+        .pipe(shell([
+            'gulp sass'
         ]));
+
 }
 function watch_sass () {
     sass('source/css/style.scss', 'style', 'public/css');
@@ -41,7 +45,7 @@ function watch_sass () {
 function watch_php () {
     php();
     gutil.log(gutil.colors.magenta('[PHP]'), '- Watch "', gutil.colors.cyan('source/**/*'), '"');
-    gulp.watch('source/css/**/*.scss', (e) => {
+    gulp.watch('source/**/*', (e) => {
         gutil.log('File Changed', gutil.colors.cyan(e.path));
         php();
         sass('source/css/style.scss', 'style', 'public/css')

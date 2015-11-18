@@ -5,6 +5,7 @@
   width: 33%;
   background: $sidebar;
   min-height: 300px;
+  margin-bottom: 0;
   .widget {
     margin: 24px 0;
     &.share {
@@ -73,11 +74,8 @@
       }
     }
   }
-  margin-bottom: 160px;
 }
-[role="main"] {
-  overflow: visible;
-}
+
 
 @media (max-width: 768px) {
   .sidebar {

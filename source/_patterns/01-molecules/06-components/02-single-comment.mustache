@@ -1,9 +1,20 @@
-<li class="comment-container">
-	<div class="comment-meta">
-		{{> atoms-avatar }}
-		<h4 class="comment-name"><a href="#">{{ name.first }} {{ name.last }}</a></h4>
-	</div>
-	<div class="comment-text">
-		<p>{{ description }}</p>
-	</div>
-</li>
+<div class="comment">
+    <header class="comment-heading">
+        <h4><span class="comment-author">Mr Ipsum</span>
+            &nbsp;
+            <button><span class="icon ion-flag"></span></button>
+        </h4>
+    </header>
+    <section class="comment-body">
+        This is a comment
+    </section>
+    <footer class="comment-footer">
+        <div class="vote-section">
+            <button><span class="icon ion-chevron-up"></span></button>
+            <span class="score">20</span>
+        </div>
+        <div class="share-section">
+            <button><span class="icon ion-share"></span></button>
+        </div>
+    </footer>
+</div>
