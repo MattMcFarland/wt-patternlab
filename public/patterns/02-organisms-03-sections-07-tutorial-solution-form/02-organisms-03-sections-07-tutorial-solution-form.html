@@ -23,22 +23,27 @@
 	
 	</head>
 	<body class="body">	
-		<p class="hide-small">This text is hidden on smaller screens</p>
+		<form class="solution-form">
+    <fieldset>
+        <section>
+        <legend>Submit Tutorial</legend>
+        <p>Fill out the fields below to share your tutorial request.</p>
+        <input type="url" placeholder="Enter URL to tutorial"/>
+        <textarea placeholder="Provide a description of your tutorial" rows="5"></textarea>
+        </section>
+    </fieldset>
+    <footer>
+        <section>
+        <input class="btn btn-white" type="submit" value="Submit"/>
+        </section>
+    </footer>
 
-<p class="hide-med hide-large"><em>This text is only visible on smaller screens</em></p>
-
-<p class="hide-med">This text is hidden on medium screens only</p>
-
-<p class="hide-small hide-large"><em>This text is only visible on medium screens</em></p>
-
-<p class="hide-large">This text is hidden on large screens</p>
-
-<p class="hide-small hide-med"><em>This text is only visible on large screens</em></p>
+</form>
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "atoms-visibility";
+		var patternPartial = "organisms-tutorial-solution-form";
 		var lineage        = [];
 		var lineageR       = [];
 		var patternState   = "";

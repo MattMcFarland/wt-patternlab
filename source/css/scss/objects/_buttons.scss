@@ -2,10 +2,12 @@
     $BUTTONS
 \*------------------------------------*/
 
-button {
+button, input[type="submit"] {
   color: inherit;
   border: none;
   background: inherit;
+  display: inline-block;
+  width: auto;
 }
 
 .btn {
@@ -38,6 +40,14 @@ button {
     }
   }
 
+  &.btn-white {
+    background: $white;
+    color: $blue;
+    &:hover, &:focus {
+      background: $grey;
+      color: $white;
+    }
+  }
   &.btn-share {
     min-width: 0;
     padding: 8px;

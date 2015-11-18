@@ -6,6 +6,7 @@
   background: $sidebar;
   min-height: 300px;
   margin-bottom: 0;
+  z-index:2;
   .widget {
     margin: 24px 0;
     &.share {
