@@ -1,0 +1,21 @@
+<div>
+    <!-- Begin .header -->
+    <header class="header" role="banner">
+        <div class="content cf">
+            {{> atoms-logo }}
+            <a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
+            {{> molecules-primary-nav }}
+        </div>
+    </header>
+    <div class="layout">
+        {{>organisms-categorybar}}
+        {{>organisms-sidebar}}
+    </div>
+    <div class="main-content-container cf">
+        <div class="main-content">
+            {{>molecules-tabs}}
+            {{>organisms-tutorial-request-list}}
+        </div>
+    </div>
+</div>
+<!-- End .header -->

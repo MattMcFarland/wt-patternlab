@@ -1,0 +1,83 @@
+
+  .tut-request-item {
+    display: block;
+
+    .content {
+      display: table;
+
+      &:hover {
+        opacity: 1;
+      }
+      .vote-cell {
+        display: table-cell;
+        min-width: 60px;
+        opacity: 0.6;
+        transition: 0.3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .content-cell {
+        vertical-align: top;
+        display:table-cell;
+        > section.meta {
+          display: block;
+          margin-bottom: 6px;
+          opacity: 0.6;
+          transition: 0.3s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        > ul.tags {
+          margin-bottom: 6px;
+          min-height: 100px;
+          opacity: 0.6;
+          transition: 0.3s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        > section.title {
+          display: block;
+        }
+
+      }
+    }
+    .divider {
+      position: relative;
+      text-align: center;
+      display:block;
+
+      &:before {
+        border-top: thin solid $light-grey;
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 90%;
+        margin: 16px 5% 0 5%;
+      }
+    }
+    .response-count {
+      text-align: center;
+      z-index: 2;
+      position: relative;
+      opacity: 0.6;
+      transition: 0.3s;
+      &:hover {
+        opacity: 1;
+      }
+      button {
+        white-space: nowrap;
+        line-height: .5em;
+        padding: .5em;
+        border-radius: 4px;
+      }
+    }
+  }
+  .tutorial-request-list {
+
+    li {
+      margin-bottom: 48px;
+    }
+  }
